@@ -15,9 +15,9 @@
     }
   ],
   "require": {
-    "php": "^5.5.0 || ^7.0",
-    "layershifter/tld-database": "^1.0",
-    "layershifter/tld-support": "^1.1",
+    "php": "^5.5.0|^7.0|^8.0",
+    "layershifter/tld-database": "dev-master",
+    "layershifter/tld-support": "dev-master",
     "symfony/polyfill-intl-idn": "^1.10"
   },
   "require-dev": {
@@ -40,5 +40,15 @@
   },
   "scripts": {
     "test": "phpunit"
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/dengrocrm/TLDDatabase.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/dengrocrm/TLDSupport.git"
+    }
+  ],
 }
